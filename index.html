@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Broadcast by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 30px;
+    height: 15px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="wethebogans.html">WE THE BOGANS</a></li>
+
+				</ul>
+			</nav>
+
+			<!-- Banner -->
+			<!--
+				To use a video as your background, set data-video to the name of your video without
+				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+				formats to work correctly.
+			-->
+
+		<section id="banner" data-image="images/banner">
+					<div class="inner">
+						<header>
+							<h1>WE THE BOGANS</h1>
+
+                        </header>
+                        <a href="#main" class="button big alt scrolly">FIND US ON TOUR</a>
+                        <a href="#main2" class="button big alt scrolly">LATEST MUSIC</a>
+                        <p></p>
+                        <p><audio controls>
+                            <source src="audio/songaudio.mp3" type="audio/mp3">
+                        </audio></p>
+					</div>
+
+				</section>
+
+		<!-- Main -->
+			<div id="main">
+
+			<!-- One -->
+				<section class="wrapper style1">
+					<div class="inner">
+						<header class="align-center">
+							<h2>TOUR DATES</h2>
+                            <script>
+
+        var now = new Date();
+        var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+        var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+        var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+        function fourdigits(number) {
+           return (number < 1000) ? number + 1900 : number;
+        }
+        today =  days[now.getDay()] + ", " +
+                 months[now.getMonth()] + " " +
+                date + ", " +
+                (fourdigits(now.getYear())) ;
+        document.write("TODAY IS " + today + ". Get your tickets before it's too late ;-)");
+
+</script>
+
+                            <!-- Display the countdown timer in an element -->
+                            <h2 id="demo"></h2>
+
+                            <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 23, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s " + "BEFORE THE NEXT GIG";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+						</header>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+								<tr>
+									<th>Date</th>
+									<th>City</th>
+									<th>Location</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>23 OCT 2018</td>
+									<td>Melbourne</td>
+									<td>Etihad stadium</td>
+								</tr>
+								<tr>
+									<td>26 OCT 2018</td>
+									<td>Melbourne</td>
+									<td>Clayton - Monash University</td>
+								</tr>
+								<tr>
+									<td>27 OCT  2018</td>
+									<td> Melbourne</td>
+									<td>Geelong - Koh Seafood Bar</td>
+								</tr>
+								<tr>
+									<td>28 OCT 2018</td>
+									<td>Melbourne</td>
+									<td>Ballarat - Ballarat University</td>
+								</tr>
+								<tr>
+									<td>31 OCT 2018</td>
+									<td>Melbourne</td>
+									<td>Bendigo - Bendigo Sports Stadium</td>
+								</tr>
+								</tbody>
+								<tfoot>
+								<tr>
+									<td colspan="2"></td>
+								</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</section>
+
+
+			<!-- Two -->
+
+
+									<!-- Tab 3 -->
+										<div class="tab tab-3 flex flex-3">
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/pic03.jpg" alt="" />
+														<div class="arrow">
+															<div class="icon fa-play"></div>
+														</div>
+													</div>
+													<a href="generic.html" class="link"><span>Click Me</span></a>
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/pic02.jpg" alt="" />
+														<div class="arrow">
+															<div class="icon fa-play"></div>
+														</div>
+													</div>
+													<a href="generic.html" class="link"><span>Click Me</span></a>
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/pic01.jpg" alt="" />
+														<div class="arrow">
+															<div class="icon fa-play"></div>
+														</div>
+													</div>
+													<a href="generic.html" class="link"><span>Click Me</span></a>
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/pic06.jpg" alt="" />
+														<div class="arrow">
+															<div class="icon fa-play"></div>
+														</div>
+													</div>
+													<a href="generic.html" class="link"><span>Click Me</span></a>
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/pic05.jpg" alt="" />
+														<div class="arrow">
+															<div class="icon fa-play"></div>
+														</div>
+													</div>
+													<a href="generic.html" class="link"><span>Click Me</span></a>
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/pic04.jpg" alt="" />
+														<div class="arrow">
+															<div class="icon fa-play"></div>
+														</div>
+													</div>
+													<a href="generic.html" class="link"><span>Click Me</span></a>
+												</div>
+										</div>
+								</div>
+
+
+			<!-- Three -->
+        <div id="main2">
+				<section class="wrapper ">
+					<div class="inner">
+						<header class="align-center">
+							<h2>OUR LATEST MUSIC</h2>
+							<p>If you watch all three videos, you will have good luck for the next 10 years</p>
+						</header>
+
+						<!-- 3 Column Video Section -->
+							<div class="flex flex-3">
+								<div class="video col">
+									<div class="image fit">
+										<img src="images/song1.jpg" alt="" />
+										<div class="arrow">
+											<div class="icon fa-play"></div>
+										</div>
+									</div>
+									<p class="caption">
+										Ice Ice Baby Parody
+									</p>
+									<a href="song1.html" class="link"><span>Click Me</span></a>
+								</div>
+								<div class="video col">
+									<div class="image fit">
+										<img src="images/song2.jpg" alt="" />
+										<div class="arrow">
+											<div class="icon fa-play"></div>
+										</div>
+									</div>
+									<p class="caption">
+										Uni Revue "Royals" Parody
+									</p>
+									<a href="song2.html" class="link"><span>Click Me</span></a>
+								</div>
+								<div class="video col">
+									<div class="image fit">
+										<img src="images/song3.jpg" alt="" />
+										<div class="arrow">
+											<div class="icon fa-play"></div>
+										</div>
+									</div>
+									<p class="caption">
+										What the Black Says
+									</p>
+									<a href="song3.html" class="link"><span>Click Me</span></a>
+								</div>
+							</div>
+					</div>
+				</section>
+
+
+
+
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="slideshow-container">
+
+                    <div class="mySlides">
+                        <q>You may say I'm a dreamer, but I'm not the only one</q>
+                        <p class="author">- We The Bogans - Summer Time Sadness (lyric)</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <q>Love is old, love is new, love is all, love is you</q>
+                        <p class="author">- We The Bogans - Ice Ice Baby (lyric)</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <q>She acts like summer and walks like rain</q>
+                        <p class="author">- We The Bogans - What is the love (lyric)</p>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+                <div class="copyright">
+                    <ul class="icons">
+                        <li><a href="#">Back to top</a></li>
+                        <li><a href="index.html">Home page</a></li>
+                        <li><a href="wethebogans.html">We the bogans</a></li>
+                    </ul>
+                </div>
+
+                <div class="copyright">
+                    <ul class="icons">
+
+
+
+                        <li class="zoom"><a href="https://twitter.com/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li class="zoom"><a href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li class="zoom"><a href="https://www.instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li class="zoom"><a href="https://www.snapchat.com/" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+
+                    </ul>
+                </div>
+            </footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+
+
+
+        </div>
+    </body>
+</html>
